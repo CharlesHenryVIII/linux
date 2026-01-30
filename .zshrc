@@ -28,5 +28,5 @@ copy_and_link() {
 
     cp -- "$src" "$dst" || return 1
     #rm -- "$src" || return 1
-    ln -fs -- "$dst" "$src" || return 1
+    ln -vfs -- "$dst" "$src" || return 1
 }

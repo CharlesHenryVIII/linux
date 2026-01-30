@@ -49,5 +49,5 @@ function copy_and_link
         or return 1
     end
 
-    ln -s $dst $src
+    ln -sv $dst $src
 end
