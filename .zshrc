@@ -27,6 +27,6 @@ copy_and_link() {
     mkdir -p -- "$(dirname -- "$dst")" || return 1
 
     cp -- "$src" "$dst" || return 1
-    #rm -- "$src" || return 1
+    rm -- "$src" || return 1
     ln -vfs -- "$dst" "$src" || return 1
 }
