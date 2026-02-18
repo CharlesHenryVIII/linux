@@ -6,6 +6,9 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 #    # smth smth
 #end
 
+alias gs="git status"
+alias gc="git clone --recurse-submodules -j(nproc) --shallow-submodules --progress"
+
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
 	command yazi $argv --cwd-file="$tmp"
